@@ -1,1 +1,69 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  /* Color System - Unified from all 3 designs */
+  --color-brand-purple: #6c39fb;
+  --color-brand-purple-dark: #2b34b0;
+  --color-brand-purple-light: #b9afff;
+  --color-brand-blue: #4776e6;
+  --color-brand-blue-light: #e4e8ff;
+
+  /* Font Families */
+  --font-family-sans: "Inter", "Open Sans", system-ui, sans-serif;
+  --font-family-display: "Manrope", sans-serif;
+  --font-family-heading: "Open Sans", sans-serif;
+  --font-family-orelega: "Orelega One", serif;
+  --font-family-inknut: "Inknut Antiqua", serif;
+  --font-family-manjari: "Manjari", sans-serif;
+  --font-family-markazi: "Markazi Text", serif;
+}
+
+/* Custom CSS for gradient backgrounds matching the designs */
+.bg-hero-gradient {
+  background: linear-gradient(270deg, #fff 0%, #f6f7ff 32.69%, #f1f3ff 51.92%, #ebeeff 75.48%, #e4e8ff 100%);
+}
+
+.bg-header-gradient {
+  background: linear-gradient(90deg, #fff 0%, #f7fbff 25.96%, #eef7ff 51.44%, #e8f4ff 72.12%, #dfefff 100%);
+}
+
+.bg-button-gradient {
+  background: linear-gradient(45deg, #6342a5 0%, #651bf7 50%, #596ee1 100%);
+}
+
+.bg-footer-gradient {
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    rgba(235, 225, 251, 0.86) 17.31%,
+    rgba(218, 199, 248, 0.74) 32.69%,
+    rgba(197, 168, 244, 0.6) 50.96%,
+    rgba(181, 143, 241, 0.48) 65.38%,
+    rgba(160, 111, 236, 0.34) 84.13%,
+    rgba(142, 84, 233, 0.21) 100%
+  );
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(90deg, #8e54e9 0%, #4776e6 100%);
+}
+
+.bg-login-button-gradient {
+  background: linear-gradient(to right, #c084fc 0%, #c084fc 12%, #6366f1 100%);
+}
+
+/* Ensure gradient backgrounds clip correctly to text */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
